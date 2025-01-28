@@ -14,7 +14,7 @@ result = model.transcribe("teste_whisper copy.mp3")
 
 print(result['text'])
 
-'''template = """Transcrição: {question}
+template = """Transcrição: {question}
 
 Resposta: ."""
 
@@ -24,4 +24,4 @@ model = OllamaLLM(model="llama3.2-vision:latest", max_tokens=100)
 
 chain = prompt | model
 
-chain.invoke({"question": result['text']})'''
+chain.invoke({"question": result['text']})
